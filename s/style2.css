@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-boxss;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* header */
+
+.header{
+    width: 80vw;
+    margin: auto;
+    height: 25vh;;
+    /* border: 2px solid red; */
+    background-color: #F8F8F8;
+   text-align: center;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font-size: 1.5rem;
+
+}
+
+.head-text h2{
+    color: #315496;
+}
+
+.head-text p{
+    color: #46A8DB;
+}
+
+.head-link{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+
+.head-link a{
+    color: #494646;
+    padding: 5px;
+    
+}
+
+.head-link a:hover{
+    
+    border-bottom: 2px solid #494646;
+}
+
+
+/* container */
+
+.container{
+    padding-top: 2%;
+    width: 55vw;
+    height: auto;
+    background-color: bisquess;
+    margin: auto;
+    display:  flex;
+    justify-content: space-between;
+    /* border: 2px solid yellow; */
+    flex-wrap: wrap;
+
+}
+
+.image{
+    width: 70%;
+    height: 308px;
+    /* border: 2px solid red; */
+    background: transparent url('https://images.unsplash.com/photo-1548213238-0da7521bd6e0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=364&q=80') 0% 0% no-repeat padding-box;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+/* recent-post */
+
+.recent-post{
+    width: 25%;
+    height: 687px;
+   
+    background-color: #EBEBEB;
+    margin-top: 0;
+}
+
+.recent-post1{
+    width: 90%;
+    height: 95%;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.recent-post1 h3{
+    font-size: 1.8rem;
+    color: #143774;
+}
+
+.recent-post1s{
+    width: 90%;
+    height: 87px;
+    background-image: url('https://images.unsplash.com/photo-1496116218417-1a781b1c416c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.recent-post2s{
+    width: 90%;
+    height: 87px;
+    background-image: url('https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.recent-post3s{
+    width: 90%;
+    height: 87px;
+    background-image: url('https://i0.wp.com/northdesigns.com/wp-content/uploads/2020/06/crop-0-0-4700-3200-0-sarah-dorweiler-x2Tmfd1-SgA-unsplash.jpg?resize=1536%2C1046&ssl=1');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.recent-post1 h4{
+    font-size: 1.8rem;
+   padding-left: 5%;
+}
+
+
+/* text1 */
+
+.text1{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+   margin-top: -45%;
+    height: 617px;
+    font-size: 1.3rem;
+}
+
+.text1 p{
+    
+}
+.text1 h2{
+    color: #54AFDE;
+}
+
+#es{
+    color: #425D8F;
+    padding-bottom: 10px;
+}
+
+footer{
+    width: 80vw;
+    margin: auto;
+    height: 50px;
+    background-color: #143774;
+    text-align: center;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   color: white;
+}
+
+@media(max-width:780px){
+
+    .header{
+        height: auto;
+        flex-wrap: wrap;
+        flex-flow: column;
+        /* font-size: 1.5rem; */
+        width: 100vw;
+        /* position: fixed; */
+    }
+
+    .head-text{
+        width: 80%;
+        margin: 15px 0 15px 0;
+        }
+
+    .head-link{
+        height: auto;
+        flex-wrap: wrap;
+        flex-flow: column;
+        width:50% ;
+        
+    }
+
+    /* blog container */
+
+    .container{
+        width: 95vw;
+        flex-flow: column;
+        flex-wrap: wrap;
+        
+    }
+
+    .image{
+        width: 100%;
+        height: 308px;
+       order: 1;
+       
+        
+    }
+
+    /* recent */
+
+    .head-link li{
+        padding: 10px;
+    }
+
+    .recent-post{
+        width: 100%;
+        height: 487px;
+        order:3;
+       
+    }
+    
+    .recent-post1{
+        width: 95%;
+       
+    }
+
+    /* text */
+
+    .text1{
+        order: 2;
+        width: 95vw;
+        margin-top: 20px;
+    }
+
+    
+footer{
+    width: 100vw;
+}
+}
